@@ -1,0 +1,24 @@
+<html>
+<head>
+  <script>
+  var packages = [];
+</script>
+  <link rel="stylesheet" href="style.css">
+  <script src="autocomplete.js"></script>
+  <script src="test.js"></script>
+  <script src="DependencyChecker.js"></script>
+</head>
+<body>
+  <form autocomplete="off" action="javascript:;" onsubmit="submitPackage(this)">
+    <div class="autocomplete" style="width:300px;">
+      <input id="myInput" type="text" name="myCountry" placeholder="Packages">
+    </div>
+    <input type="submit">
+  </form>
+  <ul id="list">
+  </ul>
+  <script>
+  autocomplete(document.getElementById("myInput"), packages);
+</script>
+</body>
+</html>
